@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Validation</title>
+</head>
+
+<body>
+    <header>
+        <h1 align="center" style="background-color:grey; margin: auto; padding: 0; color: aliceblue;">JavaScript Number Validation</h1>
+    </header>
+    <p>Please input a number between 1 to 100</p>
+    <input id="num">
+    <button type="button" onclick="myFunction()">Submit</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById('num').value;
+            let text;
+            if (isNaN(x) || x < 1 || x > 100) {
+                text = "Input not Valid";
+            }
+            else {
+                text = "Input Valid";
+            }
+            document.getElementById('demo').innerHTML = text;
+        }
+    </script>
+
+</body>
+
+</html>
