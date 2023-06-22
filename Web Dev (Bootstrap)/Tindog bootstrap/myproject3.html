@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Website</title>
+    <link rel="stylesheet" href="CSS/myproject3.css">
+    <script>
+        function toggleRecipeSteps(sectionId) {
+            var stepsElement = document.getElementById(sectionId + "-steps");
+            stepsElement.classList.toggle("show");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Pizza Recipe Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="recipe">
+            <img src="images/pizza1.jpg" alt="Recipe 1">
+            <h2>Cheese Pizza</h2>
+            <p>
+                A classic cheese pizza is a timeless favorite, loved by all. The perfect combination of gooey cheese
+                and a flavorful tomato sauce on a crispy crust makes it irresistible. Add your favorite toppings for
+                a personalized touch. Try this simple recipe and enjoy the cheesy goodness.
+            </p>
+            <a href="#" class="btn" onclick="toggleRecipeSteps('recipe1')">View Recipe</a>
+            <div id="recipe1-steps" class="recipe-steps">
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Preheat the oven to 425°F (220°C).</li>
+                    <li>Roll out the pizza dough and place it on a baking sheet.</li>
+                    <li>Spread a layer of tomato sauce evenly on the dough.</li>
+                    <li>Sprinkle your favorite cheese over the sauce.</li>
+                    <li>Add any desired toppings.</li>
+                    <li>Bake for 12-15 minutes or until the crust is golden and the cheese is melted and bubbly.</li>
+                    <li>Remove from the oven and let it cool for a few minutes before slicing.</li>
+                    <li>Enjoy your homemade cheese pizza!</li>
+                </ol>
+            </div>
+        </section>
+        <section class="recipe">
+            <img src="images/Cheese Dominator.jpg" alt="Recipe 2">
+            <h2>Cheese Dominator Pizza</h2>
+            <p>
+                The Cheese Dominator Pizza takes the classic cheese pizza to the next level. With a variety of cheeses
+                and an assortment of delicious toppings, this pizza is a flavor explosion. Follow this recipe to create
+                a cheesy masterpiece that will satisfy your cravings.
+            </p>
+            <a href="#" class="btn" onclick="toggleRecipeSteps('recipe2')">View Recipe</a>
+            <div id="recipe2-steps" class="recipe-steps">
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Preheat the oven to 425°F (220°C).</li>
+                    <li>Roll out the pizza dough and place it on a baking sheet.</li>
+                    <li>Spread a layer of tomato sauce evenly on the dough.</li>
+                    <li>Combine a variety of cheeses and sprinkle them over the sauce.</li>
+                    <li>Add your favorite toppings, such as pepperoni, mushrooms, and olives.</li>
+                    <li>Bake for 12-15 minutes or until the crust is golden and the cheese is melted and bubbly.</li>
+                    <li>Remove from the oven and let it cool for a few minutes before slicing.</li>
+                    <li>Indulge in the irresistible Cheese Dominator Pizza!</li>
+                </ol>
+            </div>
+        </section>
+        <section class="recipe">
+            <img src="images/Chicken Dominator.jpg" alt="Recipe 3">
+            <h2>Chicken Dominator Pizza</h2>
+            <p>
+                For those who enjoy a meaty pizza, the Chicken Dominator Pizza is a perfect choice. This recipe
+                combines succulent chicken pieces with a blend of cheeses and savory toppings. Try it out and delight
+                your taste buds with this mouthwatering pizza.
+            </p>
+            <a href="#" class="btn" onclick="toggleRecipeSteps('recipe3')">View Recipe</a>
+            <div id="recipe3-steps" class="recipe-steps">
+                <h3>Recipe Steps</h3>
+                <ol>
+                    <li>Preheat the oven to 425°F (220°C).</li>
+                    <li>Roll out the pizza dough and place it on a baking sheet.</li>
+                    <li>Spread a layer of barbecue sauce evenly on the dough.</li>
+                    <li>Add cooked chicken pieces and distribute them over the sauce.</li>
+                    <li>Sprinkle a generous amount of mozzarella cheese on top.</li>
+                    <li>Add additional toppings like onions, bell peppers, and mushrooms.</li>
+                    <li>Bake for 12-15 minutes or until the crust is golden and the cheese is melted and bubbly.</li>
+                    <li>Remove from the oven and let it cool for a few minutes before slicing.</li>
+                    <li>Savor the flavors of the delectable Chicken Dominator Pizza!</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2021 Recipe Website</p>
+    </footer>
+</body>
+</html>
